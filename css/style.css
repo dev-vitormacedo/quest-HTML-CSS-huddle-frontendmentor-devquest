@@ -11,7 +11,8 @@ body {
 }
 @media (max-width: 600px) {
   body {
-    background: hsl(257, 40%, 49%) top center url(../images/bg-mobile.svg) no-repeat;
+    background: hsl(257, 40%, 49%) top center url(../images/bg-mobile.svg)
+      no-repeat;
   }
 }
 .header {
@@ -33,6 +34,7 @@ body {
   grid-template-columns: 1.5fr 1fr;
   column-gap: 30px;
   justify-content: center;
+  padding: 10px auto;
 }
 .main img {
   padding: 0 10%;
@@ -66,14 +68,15 @@ body {
   background: hsl(300, 69%, 71%);
   color: #fff;
 }
-@media (max-width: 800px) {
+@media (max-width: 740px) {
   .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
     margin-top: 22px;
-    gap: 25px;
+  }
+  .main .description {
+    margin: 0 auto;
+    text-align: center;
   }
   .main .description h1 {
     font-size: 2.5rem;
@@ -89,12 +92,15 @@ body {
     margin-bottom: 30px;
   }
 }
+footer {
+  padding: 15px;
+}
 .social {
   display: flex;
   justify-content: end;
   align-content: center;
   padding: 0 5%;
-  gap: 15px;
+  gap: 20px;
 }
 .social a {
   width: 40px;
@@ -112,7 +118,7 @@ body {
   border-color: hsl(300, 69%, 71%);
   color: hsl(300, 69%, 71%);
 }
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   .social {
     justify-content: center;
     padding: 40px 0;
