@@ -4,14 +4,14 @@ html {
 body {
   background: hsl(257, 40%, 49%) center center url(../images/bg-desktop.svg)
     no-repeat;
-  background-size: conver;
+  /* background-size: cover; */
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #fff;
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   body {
-    background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat;
+    background: hsl(257, 40%, 49%) top center url(../images/bg-mobile.svg) no-repeat;
   }
 }
 .header {
@@ -32,6 +32,7 @@ body {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   column-gap: 30px;
+  justify-content: center;
 }
 .main img {
   padding: 0 10%;
@@ -58,12 +59,14 @@ body {
   color: hsl(257, 40%, 49%);
   font-weight: 400;
   transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px 2px #444;
 }
 .main .description input:hover {
   background: hsl(300, 69%, 71%);
   color: #fff;
 }
-@media (max-width: 375px) {
+@media (max-width: 800px) {
   .main {
     display: flex;
     flex-direction: column;
@@ -103,6 +106,7 @@ body {
   font-size: 1.6rem;
   color: #fff;
   transition: 0.3s;
+  cursor: pointer;
 }
 .social a:hover {
   border-color: hsl(300, 69%, 71%);
