@@ -23,7 +23,7 @@ body {
   max-width: 200px;
   margin: 25px 75px;
 }
-@media (max-width: 375px) {
+@media (max-width: 740px) {
   .header a img {
     margin: 35px;
     max-width: 120px;
